@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Drawing App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="toolbar">
+        <button id="clear-btn">Clear</button>
+        <button id="save-btn">Save</button>
+        <label for="color-picker">Color:</label>
+        <input type="color" id="color-picker" value="#000000">
+        <label for="brush-size">Brush Size:</label>
+        <input type="range" id="brush-size" min="1" max="50" value="5">
+        <label for="brush-type">Brush Type:</label>
+        <select id="brush-type">
+            <option value="round">Round</option>
+            <option value="square">Square</option>
+            <option value="dashed">Dashed</option>
+        </select>
+    </div>
+    <canvas id="drawing-canvas"></canvas>
+    <script src="script.js"></script>
+</body>
+</html>
